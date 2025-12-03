@@ -3,4 +3,6 @@
   (lib (name "marbastlib-mx")(type "KiCad")(uri "${KIPRJMOD}/libs/marbastlib/footprints/marbastlib-mx.pretty")(options "")(descr ""))
   (lib (name "marbastlib-various")(type "KiCad")(uri "${KIPRJMOD}/libs/marbastlib/footprints/marbastlib-various.pretty")(options "")(descr ""))
   (lib (name "KiCad-SSD1306-0.91-OLED-4pin-128x32")(type "KiCad")(uri "${KIPRJMOD}/libs/KiCad-SSD1306-0.91-OLED-4pin-128x32.pretty")(options "")(descr ""))
+  (lib (name "OPL")(type "KiCad")(uri "${KIPRJMOD}/libs/OPL_Kicad_Library/Seeed Studio XIAO Series Library")(options "")(descr ""))
+  (lib (name "gpxxacpy")(type "KiCad")(uri "/home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/libs/guilty-pad-xx-accent-core-plus-r")(options "")(descr ""))
 )
