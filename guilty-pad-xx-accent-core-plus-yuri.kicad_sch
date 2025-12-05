@@ -26306,7 +26306,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.5kΩ"
+		(property "Value" "4.7kΩ"
 			(at 130.81 223.5199 0)
 			(effects
 				(font
@@ -29061,7 +29061,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.5kΩ"
+		(property "Value" "4.7kΩ"
 			(at 120.65 223.5199 0)
 			(effects
 				(font
