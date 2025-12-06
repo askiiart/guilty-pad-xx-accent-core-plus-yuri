@@ -3916,9 +3916,9 @@
 		)
 		(uuid "4dfe4174-ab8a-4d9e-b47b-eba738134147")
 	)
-	(text "The XIAO nrf52840 only supplies 5V when on USB\nWhen on battery, we'll use a boost converter set to 4V (fulfills 3.3V >= 0.7*VDD_LED and 3.8V >= .95*VDD_LED)\n(those are to cover min LED data voltage relative to VDD,\nand ensure the boost converter's input voltage is always less than the output)"
+	(text "The XIAO nrf52840 only supplies 5V when on USB"
 		(exclude_from_sim no)
-		(at 52.832 220.726 0)
+		(at 43.942 223.266 0)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -3935,6 +3935,16 @@
 			)
 		)
 		(uuid "7aaaeece-63f4-451c-a809-f3e2ddad8148")
+	)
+	(text "DIN must be >=0.7*VDD to be high\n3.3 < 0.7*5, hence level shifter"
+		(exclude_from_sim no)
+		(at 103.632 43.18 0)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+		)
+		(uuid "ae78675d-8d4c-4d1c-a57e-5bbb64042e94")
 	)
 	(text "boost conversion and LED control circuitry"
 		(exclude_from_sim no)
