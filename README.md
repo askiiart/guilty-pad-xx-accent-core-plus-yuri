@@ -2,6 +2,10 @@
 
 This is a pretty simple TKL keyboard with backlighting, an OLED, and a rotary encoder. The fancy trick is that it's designed to work with the [GUILTY PAD -GAY-](https://github.com/askiiart/guilty-pad-gay), so you can do whatever you want with it via Bluetooth. Connect them together and use the hackpad as macro key combos or something, literally anything!
 
+![A render of the board looking straight-ish at it](/readme-images/render.webp)
+
+![A render of the board looking at it at a roughly 45 degree angle from the front-left-top side](/readme-images/render-2.webp)
+
 ![A screenshot of the schematic](/readme-images/schematic.png)
 
 ![A screenshot of the PCB](/readme-images/pcb.png)
