@@ -18,6 +18,7 @@ IO expander (AW9523BTQR),https://www.lcsc.com/product-detail/C148077.html,0.35,1
 Keycaps,https://www.aliexpress.us/item/3256809006592332.html,0.99,1,1,1,0.99
 5000mAh lipo,https://www.aliexpress.us/item/3256809787664995.html,5.18,1,1,1,5.18
 "M2 screws and heat-set inserts (10x M2x3 inserts, 6x M2x4 (5?), 4x M2xTBD)",https://www.aliexpress.us/item/3256807644176828.html,0.99,1,1,1,0.99
+0.91" 128x32 OLED,https://www.aliexpress.us/item/3256804386173217.html,0.99,1,1,1,0.99
 ,,,,,,
 Component Total,,,,,,77.06
 ,,,,,,
@@ -28,8 +29,8 @@ SK6803MINI-E shipping,,,,,,6.52
 5000mAh lipo shipping,,,,,,5.41
 LCSC shipping & handling,,,,,,11.71
 ,,,,,,
-Subtotal,,,,,,142.26
-Without mill-max sockets,,,,,,111.92
+Subtotal,,,,,,143.25
+Without mill-max sockets,,,,,,112.91
 ,,,,,,
-Total,,,,,,$153.99
-Without mill-max sockets,,,,,,$130.30
+Total,,,,,,155.07
+Without mill-max sockets,,,,,,122.23
