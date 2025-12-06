@@ -1,14 +1,14 @@
 [submodule "libs/mouse-bite.pretty"]
-	path = libs/mouse-bite.pretty
+	path = PCB/libs/mouse-bite.pretty
 	url = https://github.com/AchimPieters/mouse-bite.pretty
 [submodule "libs/OPL_Kicad_Library"]
-	path = libs/OPL_Kicad_Library
+	path = PCB/libs/OPL_Kicad_Library
 	url = https://github.com/Seeed-Studio/OPL_Kicad_Library
 [submodule "libs/marbastlib"]
-	path = libs/marbastlib
+	path = PCB/libs/marbastlib
 	url = https://github.com/ebastler/marbastlib
 [submodule "libs/KiCad-SSD1306-0.91-OLED-4pin-128x32.pretty"]
-	path = libs/KiCad-SSD1306-0.91-OLED-4pin-128x32.pretty
+	path = PCB/libs/KiCad-SSD1306-0.91-OLED-4pin-128x32.pretty
 	url = https://github.com/gorbachev/KiCad-SSD1306-0.91-OLED-4pin-128x32.pretty
 [submodule "3d-models/CherryMX"]
 	path = 3d-models/CherryMX
