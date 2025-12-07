@@ -11,5 +11,5 @@
 	path = PCB/libs/KiCad-SSD1306-0.91-OLED-4pin-128x32.pretty
 	url = https://github.com/gorbachev/KiCad-SSD1306-0.91-OLED-4pin-128x32.pretty
 [submodule "3d-models/CherryMX"]
-	path = 3d-models/CherryMX
+	path = PCB/3d-models/CherryMX
 	url = https://github.com/hineybush/CherryMX
