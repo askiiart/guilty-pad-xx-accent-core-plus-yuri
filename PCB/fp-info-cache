@@ -1,4 +1,4 @@
-27018010395762282
+27019775646836708
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106567,6 +106567,13 @@ Cherry MX keyswitch 6.25u PCB
 0
 2
 2
+gpxxacpy
+thingy
+Add-on for regular MX-footprints with SK6812 MINI-E
+cherry MX SK6812 Mini-E rearmount rear mount led rgb backlight
+0
+4
+4
 marbastlib-mx
 LED_MX_3mm
 Add-on for regular MX-footprints with 3mm LED
