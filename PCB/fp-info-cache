@@ -1,4 +1,4 @@
-27019775646836708
+27023310949786988
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106504,6 +106504,13 @@ Varistor VF
 0
 2
 2
+easyeda2kicad
+VQFN-32_L5.0-W5.0-P0.50-TL-EP
+
+
+0
+33
+33
 gpxxacpy
 LED_6028R
 rear-mount SMD 6028 RGB LED
@@ -106511,6 +106518,13 @@ LED RGB 6028 rear mount reverse
 0
 4
 4
+gpxxacpy
+MINNI-nRF52840-SMD
+
+
+0
+20
+20
 gpxxacpy
 SW_Cherry_MX_1.00u_PCB
 Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf

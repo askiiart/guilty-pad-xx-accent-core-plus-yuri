@@ -55,3 +55,7 @@ The woke left made me add yuri (I actually haven't added any yet, busy doing act
 |                                                                            |                                                                            |            |                 |     |          |                |
 | Total                                                                      |                                                                            |            |                 |     |          | 155.07         |
 | **Without mill-max sockets**                                               |                                                                            |            |                 |     |          | 122.23         |
+
+## TODO
+
+- redo routing everything
