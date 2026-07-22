@@ -13,3 +13,6 @@
 [submodule "3d-models/CherryMX"]
 	path = PCB/3d-models/CherryMX
 	url = https://github.com/hineybush/CherryMX
+[submodule "PCB/libs/guilty-devboard-xrd"]
+	path = PCB/libs/guilty-devboard-xrd
+	url = https://github.com/askiiart/guilty-devboard-xrd

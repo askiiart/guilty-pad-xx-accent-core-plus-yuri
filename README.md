@@ -59,3 +59,18 @@ The woke left made me add yuri (I actually haven't added any yet, busy doing act
 ## TODO
 
 - redo routing everything
+- [crystal](https://www.lcsc.com/product-detail/C18213028.html)
+  - [capacitors](https://www.lcsc.com/product-detail/C501818.html)
+- [antenna](https://www.lcsc.com/product-detail/C42395593.html)
+- [usb resistors](https://www.lcsc.com/product-detail/C2906874.html)
+- battery management chip: [SGM40567](https://www.lcsc.com/product-detail/C5141336.html)
+  - [digipot for PROG](https://www.lcsc.com/product-detail/C649485.html)
+- [usb-c port](https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M12/C165948)
+- reset button
+  - [reset button?](https://www.aliexpress.us/item/3256806601702089.html)
+  - [reset buttonnnnnn?](https://www.lcsc.com/product-detail/C49234121.html)
+- [pmos for voltage regulators](https://www.lcsc.com/product-detail/C239037.html)
+- [D4 (3A)](https://www.lcsc.com/product-detail/C97127.html)
+- [D1, D2, D3, D7 (1A)](https://www.lcsc.com/product-detail/C2912031.html)
+- [D5, D6 (2A)](https://www.lcsc.com/product-detail/C153761.html)
+- [5V boost converter](https://www.lcsc.com/product-detail/C621881.html)

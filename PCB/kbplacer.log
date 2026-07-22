@@ -1,0 +1,924 @@
+INFO: kbplacer_plugin_action.py:70: Plugin version: 0.14
+INFO: kbplacer_plugin_action.py:71: Python version: '3.13.11 (main, Dec  5 2025, 00:00:00) [GCC 15.2.1 20251111 (Red Hat 15.2.1-4)]'
+INFO: kbplacer_plugin_action.py:72: KiCad version: 9.0.6 with 4.2.2 gtk3 (phoenix) wxWidgets 3.2.6
+INFO: kbplacer_dialog.py:631: Language: en
+INFO: kbplacer_plugin_action.py:80: GUI state: {"layout_path": "/home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/kle-layout.json", "key_distance": [19.05, 19.05], "key_info": {"annotation_format": "SW{}", "position_option": "Default", "position": {"x": 0.0, "y": 0.0, "orientation": 0.0, "side": "Back"}, "template_path": ""}, "enable_diode_placement": true, "route_switches_with_diodes": true, "optimize_diodes_orientation": false, "diode_info": {"annotation_format": "D{}", "position_option": "Custom", "position": {"x": -8.25, "y": 0.0, "orientation": -90.0, "side": "Front"}, "template_path": ""}, "additional_elements": [{"annotation_format": "LED{}", "position_option": "Custom", "position": {"x": 0.0, "y": -5.08, "orientation": 0.0, "side": "Back"}, "template_path": ""}], "route_rows_and_columns": true, "template_path": "", "generate_outline": false, "outline_delta": 0.0}
+DEBUG: key_placer.py:424: Set key 1U distance: 19050000/19050000
+WARNING: key_placer.py:134: Unexpected switch net position detected, each switch should have two unique nets unambiguously defining position in key matrix, switch-by-matrix association can't be used
+DEBUG: key_placer.py:141: Switches by nets: {}
+DEBUG: key_placer.py:145: Diodes by switch: {'SW87': ['D87'], 'SW28': ['D28'], 'SW44': ['D44'], 'SW36': ['D36'], 'SW50': ['D50'], 'SW71': ['D71'], 'SW79': ['D79'], 'SW62': ['D62'], 'SW8': ['D8'], 'SW11': ['D11'], 'SW19': ['D19'], 'SW78': ['D78'], 'SW15': ['D15'], 'SW35': ['D35'], 'SW46': ['D46'], 'SW65': ['D65'], 'SW47': ['D47'], 'SW7': ['D7'], 'SW66': ['D66'], 'SW70': ['D70'], 'SW45': ['D45'], 'SW67': ['D67'], 'SW76': ['D76'], 'SW9': ['D9'], 'SW77': ['D77'], 'SW54': ['D54'], 'SW81': ['D81'], 'SW49': ['D49'], 'SW59': ['D59'], 'SW2': ['D2'], 'SW84': ['D84'], 'SW25': ['D25'], 'SW12': ['D12'], 'SW60': ['D60'], 'SW41': ['D41'], 'SW48': ['D48'], 'SW38': ['D38'], 'SW83': ['D83'], 'SW24': ['D24'], 'SW39': ['D39'], 'SW6': ['D6'], 'SW22': ['D22'], 'SW72': ['D72'], 'SW73': ['D73'], 'SW27': ['D27'], 'SW82': ['D82'], 'SW10': ['D10'], 'SW80': ['D80'], 'SW13': ['D13'], 'SW42': ['D42'], 'SW86': ['D86'], 'SW85': ['D85'], 'SW5': ['D5'], 'SW32': ['D32'], 'SW14': ['D14'], 'SW21': ['D21'], 'SW75': ['D75'], 'SW58': ['D58'], 'SW57': ['D57'], 'SW34': ['D34'], 'SW33': ['D33'], 'SW64': ['D64'], 'SW16': ['D16'], 'SW43': ['D43'], 'SW29': ['D29'], 'SW55': ['D55'], 'SW37': ['D37'], 'SW52': ['D52'], 'SW61': ['D61'], 'SW1': ['D1'], 'SW53': ['D53'], 'SW31': ['D31'], 'SW74': ['D74'], 'SW20': ['D20'], 'SW18': ['D18'], 'SW68': ['D68'], 'SW3': ['D3'], 'SW51': ['D51'], 'SW69': ['D69'], 'SW23': ['D23'], 'SW56': ['D56'], 'SW17': ['D17'], 'SW63': ['D63'], 'SW40': ['D40'], 'SW4': ['D4'], 'SW30': ['D30'], 'SW26': ['D26']}
+INFO: kle_serial.py:931: User layout: [['Esc', {'x': 1}, 'F1', 'F2', 'F3', 'F4', {'x': 0.5}, 'F5', 'F6', 'F7', 'F8', {'x': 0.5}, 'F9', 'F10', 'F11', 'F12', {'x': 0.25}, 'PrtSc', 'Scroll Lock', 'Pause\nBreak'], [{'y': 0.5}, '~\n`', '!\n1', '@\n2', '#\n3', '$\n4', '%\n5', '^\n6', '&\n7', '*\n8', '(\n9', ')\n0', '_\n-', '+\n=', {'w': 2}, 'Backspace', {'x': 0.25}, 'Insert', 'Home', 'PgUp'], [{'w': 1.5}, 'Tab', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', '{\n[', '}\n]', {'w': 1.5}, '|\n\\', {'x': 0.25}, 'Delete', 'End', 'PgDn'], [{'w': 1.75}, 'Caps Lock', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ':\n;', '"\n\'', {'w': 2.25}, 'Enter'], [{'w': 2.25}, 'Shift', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '<\n,', '>\n.', '?\n/', {'w': 2.75}, 'Shift', {'x': 1.25}, '↑'], [{'w': 1.25}, 'Ctrl', {'w': 1.25}, 'Win', {'w': 1.25}, 'Alt', {'a': 7, 'w': 6.25}, '', {'a': 4, 'w': 1.25}, 'Alt', {'w': 1.25}, 'Win', {'w': 1.25}, 'Menu', {'w': 1.25}, 'Ctrl', {'x': 0.25}, '←', '↓', '→']]
+DEBUG: key_placer.py:724: Layout offset: (28575000, 28575000)
+DEBUG: kle_serial.py:990: Layout with: x_ortholinear_keys=28, y_ortholinear_keys=16, rotated_keys=0, encoders=0, iso_enters=0 and unrecognized_shape_keys=0
+DEBUG: kle_serial.py:1015: Layout tagged: [<KeyboardTag.ROW_STAGGERED: 2>]
+DEBUG: board_modifier.py:94: Setting SW1 footprint position: (38100000, 38100000)
+DEBUG: board_modifier.py:94: Setting SW2 footprint position: (76200000, 38100000)
+DEBUG: board_modifier.py:94: Setting SW3 footprint position: (95250000, 38100000)
+DEBUG: board_modifier.py:94: Setting SW4 footprint position: (114300000, 38100000)
+DEBUG: board_modifier.py:94: Setting SW5 footprint position: (133350000, 38100000)
+DEBUG: board_modifier.py:94: Setting SW6 footprint position: (161925000, 38100000)
+DEBUG: board_modifier.py:94: Setting SW7 footprint position: (180975000, 38100000)
+DEBUG: board_modifier.py:94: Setting SW8 footprint position: (200025000, 38100000)
+DEBUG: board_modifier.py:94: Setting SW9 footprint position: (219075000, 38100000)
+DEBUG: board_modifier.py:94: Setting SW10 footprint position: (247650000, 38100000)
+DEBUG: board_modifier.py:94: Setting SW11 footprint position: (266700000, 38100000)
+DEBUG: board_modifier.py:94: Setting SW12 footprint position: (285750000, 38100000)
+DEBUG: board_modifier.py:94: Setting SW13 footprint position: (304800000, 38100000)
+DEBUG: board_modifier.py:94: Setting SW14 footprint position: (328612500, 38100000)
+DEBUG: board_modifier.py:94: Setting SW15 footprint position: (347662500, 38100000)
+DEBUG: board_modifier.py:94: Setting SW16 footprint position: (366712500, 38100000)
+DEBUG: board_modifier.py:94: Setting SW17 footprint position: (38100000, 66675000)
+DEBUG: board_modifier.py:94: Setting SW18 footprint position: (57150000, 66675000)
+DEBUG: board_modifier.py:94: Setting SW19 footprint position: (76200000, 66675000)
+DEBUG: board_modifier.py:94: Setting SW20 footprint position: (95250000, 66675000)
+DEBUG: board_modifier.py:94: Setting SW21 footprint position: (114300000, 66675000)
+DEBUG: board_modifier.py:94: Setting SW22 footprint position: (133350000, 66675000)
+DEBUG: board_modifier.py:94: Setting SW23 footprint position: (152400000, 66675000)
+DEBUG: board_modifier.py:94: Setting SW24 footprint position: (171450000, 66675000)
+DEBUG: board_modifier.py:94: Setting SW25 footprint position: (190500000, 66675000)
+DEBUG: board_modifier.py:94: Setting SW26 footprint position: (209550000, 66675000)
+DEBUG: board_modifier.py:94: Setting SW27 footprint position: (228600000, 66675000)
+DEBUG: board_modifier.py:94: Setting SW28 footprint position: (247650000, 66675000)
+DEBUG: board_modifier.py:94: Setting SW29 footprint position: (266700000, 66675000)
+DEBUG: board_modifier.py:94: Setting SW30 footprint position: (295275000, 66675000)
+DEBUG: board_modifier.py:94: Setting SW31 footprint position: (328612500, 66675000)
+DEBUG: board_modifier.py:94: Setting SW32 footprint position: (347662500, 66675000)
+DEBUG: board_modifier.py:94: Setting SW33 footprint position: (366712500, 66675000)
+DEBUG: board_modifier.py:94: Setting SW34 footprint position: (42862500, 85725000)
+DEBUG: board_modifier.py:94: Setting SW35 footprint position: (66675000, 85725000)
+DEBUG: board_modifier.py:94: Setting SW36 footprint position: (85725000, 85725000)
+DEBUG: board_modifier.py:94: Setting SW37 footprint position: (104775000, 85725000)
+DEBUG: board_modifier.py:94: Setting SW38 footprint position: (123825000, 85725000)
+DEBUG: board_modifier.py:94: Setting SW39 footprint position: (142875000, 85725000)
+DEBUG: board_modifier.py:94: Setting SW40 footprint position: (161925000, 85725000)
+DEBUG: board_modifier.py:94: Setting SW41 footprint position: (180975000, 85725000)
+DEBUG: board_modifier.py:94: Setting SW42 footprint position: (200025000, 85725000)
+DEBUG: board_modifier.py:94: Setting SW43 footprint position: (219075000, 85725000)
+DEBUG: board_modifier.py:94: Setting SW44 footprint position: (238125000, 85725000)
+DEBUG: board_modifier.py:94: Setting SW45 footprint position: (257175000, 85725000)
+DEBUG: board_modifier.py:94: Setting SW46 footprint position: (276225000, 85725000)
+DEBUG: board_modifier.py:94: Setting SW47 footprint position: (300037500, 85725000)
+DEBUG: board_modifier.py:94: Setting SW48 footprint position: (328612500, 85725000)
+DEBUG: board_modifier.py:94: Setting SW49 footprint position: (347662500, 85725000)
+DEBUG: board_modifier.py:94: Setting SW50 footprint position: (366712500, 85725000)
+DEBUG: board_modifier.py:94: Setting SW51 footprint position: (45243750, 104775000)
+DEBUG: board_modifier.py:94: Setting SW52 footprint position: (71437500, 104775000)
+DEBUG: board_modifier.py:94: Setting SW53 footprint position: (90487500, 104775000)
+DEBUG: board_modifier.py:94: Setting SW54 footprint position: (109537500, 104775000)
+DEBUG: board_modifier.py:94: Setting SW55 footprint position: (128587500, 104775000)
+DEBUG: board_modifier.py:94: Setting SW56 footprint position: (147637500, 104775000)
+DEBUG: board_modifier.py:94: Setting SW57 footprint position: (166687500, 104775000)
+DEBUG: board_modifier.py:94: Setting SW58 footprint position: (185737500, 104775000)
+DEBUG: board_modifier.py:94: Setting SW59 footprint position: (204787500, 104775000)
+DEBUG: board_modifier.py:94: Setting SW60 footprint position: (223837500, 104775000)
+DEBUG: board_modifier.py:94: Setting SW61 footprint position: (242887500, 104775000)
+DEBUG: board_modifier.py:94: Setting SW62 footprint position: (261937500, 104775000)
+DEBUG: board_modifier.py:94: Setting SW63 footprint position: (292893750, 104775000)
+DEBUG: board_modifier.py:94: Setting SW64 footprint position: (50006250, 123825000)
+DEBUG: board_modifier.py:94: Setting SW65 footprint position: (80962500, 123825000)
+DEBUG: board_modifier.py:94: Setting SW66 footprint position: (100012500, 123825000)
+DEBUG: board_modifier.py:94: Setting SW67 footprint position: (119062500, 123825000)
+DEBUG: board_modifier.py:94: Setting SW68 footprint position: (138112500, 123825000)
+DEBUG: board_modifier.py:94: Setting SW69 footprint position: (157162500, 123825000)
+DEBUG: board_modifier.py:94: Setting SW70 footprint position: (176212500, 123825000)
+DEBUG: board_modifier.py:94: Setting SW71 footprint position: (195262500, 123825000)
+DEBUG: board_modifier.py:94: Setting SW72 footprint position: (214312500, 123825000)
+DEBUG: board_modifier.py:94: Setting SW73 footprint position: (233362500, 123825000)
+DEBUG: board_modifier.py:94: Setting SW74 footprint position: (252412500, 123825000)
+DEBUG: board_modifier.py:94: Setting SW75 footprint position: (288131250, 123825000)
+DEBUG: board_modifier.py:94: Setting SW76 footprint position: (347662500, 123825000)
+DEBUG: board_modifier.py:94: Setting SW77 footprint position: (40481250, 142875000)
+DEBUG: board_modifier.py:94: Setting SW78 footprint position: (64293750, 142875000)
+DEBUG: board_modifier.py:94: Setting SW79 footprint position: (88106250, 142875000)
+DEBUG: board_modifier.py:94: Setting SW80 footprint position: (159543750, 142875000)
+DEBUG: board_modifier.py:94: Setting SW81 footprint position: (230981250, 142875000)
+DEBUG: board_modifier.py:94: Setting SW82 footprint position: (254793750, 142875000)
+DEBUG: board_modifier.py:94: Setting SW83 footprint position: (278606250, 142875000)
+DEBUG: board_modifier.py:94: Setting SW84 footprint position: (302418750, 142875000)
+DEBUG: board_modifier.py:94: Setting SW85 footprint position: (328612500, 142875000)
+DEBUG: board_modifier.py:94: Setting SW86 footprint position: (347662500, 142875000)
+DEBUG: board_modifier.py:94: Setting SW87 footprint position: (366712500, 142875000)
+INFO: key_placer.py:1078: Diode info: [ElementInfo(annotation_format='D{}', position_option=<PositionOption.CUSTOM: 'Custom'>, position=ElementPosition(x=-8.25, y=0.0, orientation=-90.0, side=<Side.FRONT: 'Front'>), template_path='')]
+DEBUG: board_modifier.py:107: Getting SW1 footprint position: (38100000, 38100000)
+DEBUG: board_modifier.py:94: Setting D1 footprint position: (29850000, 38100000)
+DEBUG: board_modifier.py:107: Getting SW2 footprint position: (76200000, 38100000)
+DEBUG: board_modifier.py:94: Setting D2 footprint position: (67950000, 38100000)
+DEBUG: board_modifier.py:107: Getting SW3 footprint position: (95250000, 38100000)
+DEBUG: board_modifier.py:94: Setting D3 footprint position: (87000000, 38100000)
+DEBUG: board_modifier.py:107: Getting SW4 footprint position: (114300000, 38100000)
+DEBUG: board_modifier.py:94: Setting D4 footprint position: (106050000, 38100000)
+DEBUG: board_modifier.py:107: Getting SW5 footprint position: (133350000, 38100000)
+DEBUG: board_modifier.py:94: Setting D5 footprint position: (125100000, 38100000)
+DEBUG: board_modifier.py:107: Getting SW6 footprint position: (161925000, 38100000)
+DEBUG: board_modifier.py:94: Setting D6 footprint position: (153675000, 38100000)
+DEBUG: board_modifier.py:107: Getting SW7 footprint position: (180975000, 38100000)
+DEBUG: board_modifier.py:94: Setting D7 footprint position: (172725000, 38100000)
+DEBUG: board_modifier.py:107: Getting SW8 footprint position: (200025000, 38100000)
+DEBUG: board_modifier.py:94: Setting D8 footprint position: (191775000, 38100000)
+DEBUG: board_modifier.py:107: Getting SW9 footprint position: (219075000, 38100000)
+DEBUG: board_modifier.py:94: Setting D9 footprint position: (210825000, 38100000)
+DEBUG: board_modifier.py:107: Getting SW10 footprint position: (247650000, 38100000)
+DEBUG: board_modifier.py:94: Setting D10 footprint position: (239400000, 38100000)
+DEBUG: board_modifier.py:107: Getting SW11 footprint position: (266700000, 38100000)
+DEBUG: board_modifier.py:94: Setting D11 footprint position: (258450000, 38100000)
+DEBUG: board_modifier.py:107: Getting SW12 footprint position: (285750000, 38100000)
+DEBUG: board_modifier.py:94: Setting D12 footprint position: (277500000, 38100000)
+DEBUG: board_modifier.py:107: Getting SW13 footprint position: (304800000, 38100000)
+DEBUG: board_modifier.py:94: Setting D13 footprint position: (296550000, 38100000)
+DEBUG: board_modifier.py:107: Getting SW14 footprint position: (328612500, 38100000)
+DEBUG: board_modifier.py:94: Setting D14 footprint position: (320362500, 38100000)
+DEBUG: board_modifier.py:107: Getting SW15 footprint position: (347662500, 38100000)
+DEBUG: board_modifier.py:94: Setting D15 footprint position: (339412500, 38100000)
+DEBUG: board_modifier.py:107: Getting SW16 footprint position: (366712500, 38100000)
+DEBUG: board_modifier.py:94: Setting D16 footprint position: (358462500, 38100000)
+DEBUG: board_modifier.py:107: Getting SW17 footprint position: (38100000, 66675000)
+DEBUG: board_modifier.py:94: Setting D17 footprint position: (29850000, 66675000)
+DEBUG: board_modifier.py:107: Getting SW18 footprint position: (57150000, 66675000)
+DEBUG: board_modifier.py:94: Setting D18 footprint position: (48900000, 66675000)
+DEBUG: board_modifier.py:107: Getting SW19 footprint position: (76200000, 66675000)
+DEBUG: board_modifier.py:94: Setting D19 footprint position: (67950000, 66675000)
+DEBUG: board_modifier.py:107: Getting SW20 footprint position: (95250000, 66675000)
+DEBUG: board_modifier.py:94: Setting D20 footprint position: (87000000, 66675000)
+DEBUG: board_modifier.py:107: Getting SW21 footprint position: (114300000, 66675000)
+DEBUG: board_modifier.py:94: Setting D21 footprint position: (106050000, 66675000)
+DEBUG: board_modifier.py:107: Getting SW22 footprint position: (133350000, 66675000)
+DEBUG: board_modifier.py:94: Setting D22 footprint position: (125100000, 66675000)
+DEBUG: board_modifier.py:107: Getting SW23 footprint position: (152400000, 66675000)
+DEBUG: board_modifier.py:94: Setting D23 footprint position: (144150000, 66675000)
+DEBUG: board_modifier.py:107: Getting SW24 footprint position: (171450000, 66675000)
+DEBUG: board_modifier.py:94: Setting D24 footprint position: (163200000, 66675000)
+DEBUG: board_modifier.py:107: Getting SW25 footprint position: (190500000, 66675000)
+DEBUG: board_modifier.py:94: Setting D25 footprint position: (182250000, 66675000)
+DEBUG: board_modifier.py:107: Getting SW26 footprint position: (209550000, 66675000)
+DEBUG: board_modifier.py:94: Setting D26 footprint position: (201300000, 66675000)
+DEBUG: board_modifier.py:107: Getting SW27 footprint position: (228600000, 66675000)
+DEBUG: board_modifier.py:94: Setting D27 footprint position: (220350000, 66675000)
+DEBUG: board_modifier.py:107: Getting SW28 footprint position: (247650000, 66675000)
+DEBUG: board_modifier.py:94: Setting D28 footprint position: (239400000, 66675000)
+DEBUG: board_modifier.py:107: Getting SW29 footprint position: (266700000, 66675000)
+DEBUG: board_modifier.py:94: Setting D29 footprint position: (258450000, 66675000)
+DEBUG: board_modifier.py:107: Getting SW30 footprint position: (295275000, 66675000)
+DEBUG: board_modifier.py:94: Setting D30 footprint position: (287025000, 66675000)
+DEBUG: board_modifier.py:107: Getting SW31 footprint position: (328612500, 66675000)
+DEBUG: board_modifier.py:94: Setting D31 footprint position: (320362500, 66675000)
+DEBUG: board_modifier.py:107: Getting SW32 footprint position: (347662500, 66675000)
+DEBUG: board_modifier.py:94: Setting D32 footprint position: (339412500, 66675000)
+DEBUG: board_modifier.py:107: Getting SW33 footprint position: (366712500, 66675000)
+DEBUG: board_modifier.py:94: Setting D33 footprint position: (358462500, 66675000)
+DEBUG: board_modifier.py:107: Getting SW34 footprint position: (42862500, 85725000)
+DEBUG: board_modifier.py:94: Setting D34 footprint position: (34612500, 85725000)
+DEBUG: board_modifier.py:107: Getting SW35 footprint position: (66675000, 85725000)
+DEBUG: board_modifier.py:94: Setting D35 footprint position: (58425000, 85725000)
+DEBUG: board_modifier.py:107: Getting SW36 footprint position: (85725000, 85725000)
+DEBUG: board_modifier.py:94: Setting D36 footprint position: (77475000, 85725000)
+DEBUG: board_modifier.py:107: Getting SW37 footprint position: (104775000, 85725000)
+DEBUG: board_modifier.py:94: Setting D37 footprint position: (96525000, 85725000)
+DEBUG: board_modifier.py:107: Getting SW38 footprint position: (123825000, 85725000)
+DEBUG: board_modifier.py:94: Setting D38 footprint position: (115575000, 85725000)
+DEBUG: board_modifier.py:107: Getting SW39 footprint position: (142875000, 85725000)
+DEBUG: board_modifier.py:94: Setting D39 footprint position: (134625000, 85725000)
+DEBUG: board_modifier.py:107: Getting SW40 footprint position: (161925000, 85725000)
+DEBUG: board_modifier.py:94: Setting D40 footprint position: (153675000, 85725000)
+DEBUG: board_modifier.py:107: Getting SW41 footprint position: (180975000, 85725000)
+DEBUG: board_modifier.py:94: Setting D41 footprint position: (172725000, 85725000)
+DEBUG: board_modifier.py:107: Getting SW42 footprint position: (200025000, 85725000)
+DEBUG: board_modifier.py:94: Setting D42 footprint position: (191775000, 85725000)
+DEBUG: board_modifier.py:107: Getting SW43 footprint position: (219075000, 85725000)
+DEBUG: board_modifier.py:94: Setting D43 footprint position: (210825000, 85725000)
+DEBUG: board_modifier.py:107: Getting SW44 footprint position: (238125000, 85725000)
+DEBUG: board_modifier.py:94: Setting D44 footprint position: (229875000, 85725000)
+DEBUG: board_modifier.py:107: Getting SW45 footprint position: (257175000, 85725000)
+DEBUG: board_modifier.py:94: Setting D45 footprint position: (248925000, 85725000)
+DEBUG: board_modifier.py:107: Getting SW46 footprint position: (276225000, 85725000)
+DEBUG: board_modifier.py:94: Setting D46 footprint position: (267975000, 85725000)
+DEBUG: board_modifier.py:107: Getting SW47 footprint position: (300037500, 85725000)
+DEBUG: board_modifier.py:94: Setting D47 footprint position: (291787500, 85725000)
+DEBUG: board_modifier.py:107: Getting SW48 footprint position: (328612500, 85725000)
+DEBUG: board_modifier.py:94: Setting D48 footprint position: (320362500, 85725000)
+DEBUG: board_modifier.py:107: Getting SW49 footprint position: (347662500, 85725000)
+DEBUG: board_modifier.py:94: Setting D49 footprint position: (339412500, 85725000)
+DEBUG: board_modifier.py:107: Getting SW50 footprint position: (366712500, 85725000)
+DEBUG: board_modifier.py:94: Setting D50 footprint position: (358462500, 85725000)
+DEBUG: board_modifier.py:107: Getting SW51 footprint position: (45243750, 104775000)
+DEBUG: board_modifier.py:94: Setting D51 footprint position: (36993750, 104775000)
+DEBUG: board_modifier.py:107: Getting SW52 footprint position: (71437500, 104775000)
+DEBUG: board_modifier.py:94: Setting D52 footprint position: (63187500, 104775000)
+DEBUG: board_modifier.py:107: Getting SW53 footprint position: (90487500, 104775000)
+DEBUG: board_modifier.py:94: Setting D53 footprint position: (82237500, 104775000)
+DEBUG: board_modifier.py:107: Getting SW54 footprint position: (109537500, 104775000)
+DEBUG: board_modifier.py:94: Setting D54 footprint position: (101287500, 104775000)
+DEBUG: board_modifier.py:107: Getting SW55 footprint position: (128587500, 104775000)
+DEBUG: board_modifier.py:94: Setting D55 footprint position: (120337500, 104775000)
+DEBUG: board_modifier.py:107: Getting SW56 footprint position: (147637500, 104775000)
+DEBUG: board_modifier.py:94: Setting D56 footprint position: (139387500, 104775000)
+DEBUG: board_modifier.py:107: Getting SW57 footprint position: (166687500, 104775000)
+DEBUG: board_modifier.py:94: Setting D57 footprint position: (158437500, 104775000)
+DEBUG: board_modifier.py:107: Getting SW58 footprint position: (185737500, 104775000)
+DEBUG: board_modifier.py:94: Setting D58 footprint position: (177487500, 104775000)
+DEBUG: board_modifier.py:107: Getting SW59 footprint position: (204787500, 104775000)
+DEBUG: board_modifier.py:94: Setting D59 footprint position: (196537500, 104775000)
+DEBUG: board_modifier.py:107: Getting SW60 footprint position: (223837500, 104775000)
+DEBUG: board_modifier.py:94: Setting D60 footprint position: (215587500, 104775000)
+DEBUG: board_modifier.py:107: Getting SW61 footprint position: (242887500, 104775000)
+DEBUG: board_modifier.py:94: Setting D61 footprint position: (234637500, 104775000)
+DEBUG: board_modifier.py:107: Getting SW62 footprint position: (261937500, 104775000)
+DEBUG: board_modifier.py:94: Setting D62 footprint position: (253687500, 104775000)
+DEBUG: board_modifier.py:107: Getting SW63 footprint position: (292893750, 104775000)
+DEBUG: board_modifier.py:94: Setting D63 footprint position: (284643750, 104775000)
+DEBUG: board_modifier.py:107: Getting SW64 footprint position: (50006250, 123825000)
+DEBUG: board_modifier.py:94: Setting D64 footprint position: (41756250, 123825000)
+DEBUG: board_modifier.py:107: Getting SW65 footprint position: (80962500, 123825000)
+DEBUG: board_modifier.py:94: Setting D65 footprint position: (72712500, 123825000)
+DEBUG: board_modifier.py:107: Getting SW66 footprint position: (100012500, 123825000)
+DEBUG: board_modifier.py:94: Setting D66 footprint position: (91762500, 123825000)
+DEBUG: board_modifier.py:107: Getting SW67 footprint position: (119062500, 123825000)
+DEBUG: board_modifier.py:94: Setting D67 footprint position: (110812500, 123825000)
+DEBUG: board_modifier.py:107: Getting SW68 footprint position: (138112500, 123825000)
+DEBUG: board_modifier.py:94: Setting D68 footprint position: (129862500, 123825000)
+DEBUG: board_modifier.py:107: Getting SW69 footprint position: (157162500, 123825000)
+DEBUG: board_modifier.py:94: Setting D69 footprint position: (148912500, 123825000)
+DEBUG: board_modifier.py:107: Getting SW70 footprint position: (176212500, 123825000)
+DEBUG: board_modifier.py:94: Setting D70 footprint position: (167962500, 123825000)
+DEBUG: board_modifier.py:107: Getting SW71 footprint position: (195262500, 123825000)
+DEBUG: board_modifier.py:94: Setting D71 footprint position: (187012500, 123825000)
+DEBUG: board_modifier.py:107: Getting SW72 footprint position: (214312500, 123825000)
+DEBUG: board_modifier.py:94: Setting D72 footprint position: (206062500, 123825000)
+DEBUG: board_modifier.py:107: Getting SW73 footprint position: (233362500, 123825000)
+DEBUG: board_modifier.py:94: Setting D73 footprint position: (225112500, 123825000)
+DEBUG: board_modifier.py:107: Getting SW74 footprint position: (252412500, 123825000)
+DEBUG: board_modifier.py:94: Setting D74 footprint position: (244162500, 123825000)
+DEBUG: board_modifier.py:107: Getting SW75 footprint position: (288131250, 123825000)
+DEBUG: board_modifier.py:94: Setting D75 footprint position: (279881250, 123825000)
+DEBUG: board_modifier.py:107: Getting SW76 footprint position: (347662500, 123825000)
+DEBUG: board_modifier.py:94: Setting D76 footprint position: (339412500, 123825000)
+DEBUG: board_modifier.py:107: Getting SW77 footprint position: (40481250, 142875000)
+DEBUG: board_modifier.py:94: Setting D77 footprint position: (32231250, 142875000)
+DEBUG: board_modifier.py:107: Getting SW78 footprint position: (64293750, 142875000)
+DEBUG: board_modifier.py:94: Setting D78 footprint position: (56043750, 142875000)
+DEBUG: board_modifier.py:107: Getting SW79 footprint position: (88106250, 142875000)
+DEBUG: board_modifier.py:94: Setting D79 footprint position: (79856250, 142875000)
+DEBUG: board_modifier.py:107: Getting SW80 footprint position: (159543750, 142875000)
+DEBUG: board_modifier.py:94: Setting D80 footprint position: (151293750, 142875000)
+DEBUG: board_modifier.py:107: Getting SW81 footprint position: (230981250, 142875000)
+DEBUG: board_modifier.py:94: Setting D81 footprint position: (222731250, 142875000)
+DEBUG: board_modifier.py:107: Getting SW82 footprint position: (254793750, 142875000)
+DEBUG: board_modifier.py:94: Setting D82 footprint position: (246543750, 142875000)
+DEBUG: board_modifier.py:107: Getting SW83 footprint position: (278606250, 142875000)
+DEBUG: board_modifier.py:94: Setting D83 footprint position: (270356250, 142875000)
+DEBUG: board_modifier.py:107: Getting SW84 footprint position: (302418750, 142875000)
+DEBUG: board_modifier.py:94: Setting D84 footprint position: (294168750, 142875000)
+DEBUG: board_modifier.py:107: Getting SW85 footprint position: (328612500, 142875000)
+DEBUG: board_modifier.py:94: Setting D85 footprint position: (320362500, 142875000)
+DEBUG: board_modifier.py:107: Getting SW86 footprint position: (347662500, 142875000)
+DEBUG: board_modifier.py:94: Setting D86 footprint position: (339412500, 142875000)
+DEBUG: board_modifier.py:107: Getting SW87 footprint position: (366712500, 142875000)
+DEBUG: board_modifier.py:94: Setting D87 footprint position: (358462500, 142875000)
+DEBUG: board_modifier.py:107: Getting SW89 footprint position: (359262500, 102275000)
+DEBUG: key_placer.py:854: Placing additional elements for SW89
+DEBUG: board_modifier.py:107: Getting SW89 footprint position: (359262500, 102275000)
+DEBUG: board_modifier.py:84: Searching for optional LED89 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SW13
+DEBUG: board_modifier.py:107: Getting SW13 footprint position: (304800000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED13 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED13 footprint position: (304800000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for SW78
+DEBUG: board_modifier.py:107: Getting SW78 footprint position: (64293750, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional LED78 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED78 footprint position: (64293750, 137795000)
+DEBUG: key_placer.py:854: Placing additional elements for SW10
+DEBUG: board_modifier.py:107: Getting SW10 footprint position: (247650000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED10 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED10 footprint position: (247650000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for SW41
+DEBUG: board_modifier.py:107: Getting SW41 footprint position: (180975000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional LED41 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED41 footprint position: (180975000, 80645000)
+DEBUG: key_placer.py:854: Placing additional elements for SW27
+DEBUG: board_modifier.py:107: Getting SW27 footprint position: (228600000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional LED27 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED27 footprint position: (228600000, 61595000)
+DEBUG: key_placer.py:854: Placing additional elements for SW67
+DEBUG: board_modifier.py:107: Getting SW67 footprint position: (119062500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional LED67 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED67 footprint position: (119062500, 118745000)
+DEBUG: key_placer.py:854: Placing additional elements for SW15
+DEBUG: board_modifier.py:107: Getting SW15 footprint position: (347662500, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED15 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED15 footprint position: (347662500, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for SW31
+DEBUG: board_modifier.py:107: Getting SW31 footprint position: (328612500, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional LED31 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED31 footprint position: (328612500, 61595000)
+DEBUG: key_placer.py:854: Placing additional elements for SW22
+DEBUG: board_modifier.py:107: Getting SW22 footprint position: (133350000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional LED22 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED22 footprint position: (133350000, 61595000)
+DEBUG: key_placer.py:854: Placing additional elements for SW35
+DEBUG: board_modifier.py:107: Getting SW35 footprint position: (66675000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional LED35 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED35 footprint position: (66675000, 80645000)
+DEBUG: key_placer.py:854: Placing additional elements for SW12
+DEBUG: board_modifier.py:107: Getting SW12 footprint position: (285750000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED12 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED12 footprint position: (285750000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for SW32
+DEBUG: board_modifier.py:107: Getting SW32 footprint position: (347662500, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional LED32 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED32 footprint position: (347662500, 61595000)
+DEBUG: key_placer.py:854: Placing additional elements for SW4
+DEBUG: board_modifier.py:107: Getting SW4 footprint position: (114300000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED4 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED4 footprint position: (114300000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for SW49
+DEBUG: board_modifier.py:107: Getting SW49 footprint position: (347662500, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional LED49 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED49 footprint position: (347662500, 80645000)
+DEBUG: key_placer.py:854: Placing additional elements for SW6
+DEBUG: board_modifier.py:107: Getting SW6 footprint position: (161925000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED6 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED6 footprint position: (161925000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for SW66
+DEBUG: board_modifier.py:107: Getting SW66 footprint position: (100012500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional LED66 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED66 footprint position: (100012500, 118745000)
+DEBUG: key_placer.py:854: Placing additional elements for SW24
+DEBUG: board_modifier.py:107: Getting SW24 footprint position: (171450000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional LED24 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED24 footprint position: (171450000, 61595000)
+DEBUG: key_placer.py:854: Placing additional elements for SW57
+DEBUG: board_modifier.py:107: Getting SW57 footprint position: (166687500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional LED57 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED57 footprint position: (166687500, 99695000)
+DEBUG: key_placer.py:854: Placing additional elements for SW44
+DEBUG: board_modifier.py:107: Getting SW44 footprint position: (238125000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional LED44 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED44 footprint position: (238125000, 80645000)
+DEBUG: key_placer.py:854: Placing additional elements for SW18
+DEBUG: board_modifier.py:107: Getting SW18 footprint position: (57150000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional LED18 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED18 footprint position: (57150000, 61595000)
+DEBUG: key_placer.py:854: Placing additional elements for SW25
+DEBUG: board_modifier.py:107: Getting SW25 footprint position: (190500000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional LED25 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED25 footprint position: (190500000, 61595000)
+DEBUG: key_placer.py:854: Placing additional elements for SW29
+DEBUG: board_modifier.py:107: Getting SW29 footprint position: (266700000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional LED29 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED29 footprint position: (266700000, 61595000)
+DEBUG: key_placer.py:854: Placing additional elements for SW74
+DEBUG: board_modifier.py:107: Getting SW74 footprint position: (252412500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional LED74 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED74 footprint position: (252412500, 118745000)
+DEBUG: key_placer.py:854: Placing additional elements for SW72
+DEBUG: board_modifier.py:107: Getting SW72 footprint position: (214312500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional LED72 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED72 footprint position: (214312500, 118745000)
+DEBUG: key_placer.py:854: Placing additional elements for SW87
+DEBUG: board_modifier.py:107: Getting SW87 footprint position: (366712500, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional LED87 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED87 footprint position: (366712500, 137795000)
+DEBUG: key_placer.py:854: Placing additional elements for SW5
+DEBUG: board_modifier.py:107: Getting SW5 footprint position: (133350000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED5 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED5 footprint position: (133350000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for SW59
+DEBUG: board_modifier.py:107: Getting SW59 footprint position: (204787500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional LED59 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED59 footprint position: (204787500, 99695000)
+DEBUG: key_placer.py:854: Placing additional elements for SW68
+DEBUG: board_modifier.py:107: Getting SW68 footprint position: (138112500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional LED68 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED68 footprint position: (138112500, 118745000)
+DEBUG: key_placer.py:854: Placing additional elements for SW21
+DEBUG: board_modifier.py:107: Getting SW21 footprint position: (114300000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional LED21 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED21 footprint position: (114300000, 61595000)
+DEBUG: key_placer.py:854: Placing additional elements for SW60
+DEBUG: board_modifier.py:107: Getting SW60 footprint position: (223837500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional LED60 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED60 footprint position: (223837500, 99695000)
+DEBUG: key_placer.py:854: Placing additional elements for SW23
+DEBUG: board_modifier.py:107: Getting SW23 footprint position: (152400000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional LED23 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED23 footprint position: (152400000, 61595000)
+DEBUG: key_placer.py:854: Placing additional elements for SW55
+DEBUG: board_modifier.py:107: Getting SW55 footprint position: (128587500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional LED55 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED55 footprint position: (128587500, 99695000)
+DEBUG: key_placer.py:854: Placing additional elements for SW40
+DEBUG: board_modifier.py:107: Getting SW40 footprint position: (161925000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional LED40 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED40 footprint position: (161925000, 80645000)
+DEBUG: key_placer.py:854: Placing additional elements for SW56
+DEBUG: board_modifier.py:107: Getting SW56 footprint position: (147637500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional LED56 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED56 footprint position: (147637500, 99695000)
+DEBUG: key_placer.py:854: Placing additional elements for SW81
+DEBUG: board_modifier.py:107: Getting SW81 footprint position: (230981250, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional LED81 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED81 footprint position: (230981250, 137795000)
+DEBUG: key_placer.py:854: Placing additional elements for SW17
+DEBUG: board_modifier.py:107: Getting SW17 footprint position: (38100000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional LED17 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED17 footprint position: (38100000, 61595000)
+DEBUG: key_placer.py:854: Placing additional elements for SW34
+DEBUG: board_modifier.py:107: Getting SW34 footprint position: (42862500, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional LED34 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED34 footprint position: (42862500, 80645000)
+DEBUG: key_placer.py:854: Placing additional elements for SW33
+DEBUG: board_modifier.py:107: Getting SW33 footprint position: (366712500, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional LED33 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED33 footprint position: (366712500, 61595000)
+DEBUG: key_placer.py:854: Placing additional elements for SW79
+DEBUG: board_modifier.py:107: Getting SW79 footprint position: (88106250, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional LED79 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED79 footprint position: (88106250, 137795000)
+DEBUG: key_placer.py:854: Placing additional elements for SW19
+DEBUG: board_modifier.py:107: Getting SW19 footprint position: (76200000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional LED19 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED19 footprint position: (76200000, 61595000)
+DEBUG: key_placer.py:854: Placing additional elements for SW3
+DEBUG: board_modifier.py:107: Getting SW3 footprint position: (95250000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED3 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED3 footprint position: (95250000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for SW65
+DEBUG: board_modifier.py:107: Getting SW65 footprint position: (80962500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional LED65 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED65 footprint position: (80962500, 118745000)
+DEBUG: key_placer.py:854: Placing additional elements for SW83
+DEBUG: board_modifier.py:107: Getting SW83 footprint position: (278606250, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional LED83 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED83 footprint position: (278606250, 137795000)
+DEBUG: key_placer.py:854: Placing additional elements for SW73
+DEBUG: board_modifier.py:107: Getting SW73 footprint position: (233362500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional LED73 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED73 footprint position: (233362500, 118745000)
+DEBUG: key_placer.py:854: Placing additional elements for SW38
+DEBUG: board_modifier.py:107: Getting SW38 footprint position: (123825000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional LED38 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED38 footprint position: (123825000, 80645000)
+DEBUG: key_placer.py:854: Placing additional elements for SW84
+DEBUG: board_modifier.py:107: Getting SW84 footprint position: (302418750, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional LED84 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED84 footprint position: (302418750, 137795000)
+DEBUG: key_placer.py:854: Placing additional elements for SW1
+DEBUG: board_modifier.py:107: Getting SW1 footprint position: (38100000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED1 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED1 footprint position: (38100000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for SW48
+DEBUG: board_modifier.py:107: Getting SW48 footprint position: (328612500, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional LED48 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED48 footprint position: (328612500, 80645000)
+DEBUG: key_placer.py:854: Placing additional elements for SW51
+DEBUG: board_modifier.py:107: Getting SW51 footprint position: (45243750, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional LED51 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED51 footprint position: (45243750, 99695000)
+DEBUG: key_placer.py:854: Placing additional elements for SW16
+DEBUG: board_modifier.py:107: Getting SW16 footprint position: (366712500, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED16 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED16 footprint position: (366712500, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for SW43
+DEBUG: board_modifier.py:107: Getting SW43 footprint position: (219075000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional LED43 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED43 footprint position: (219075000, 80645000)
+DEBUG: key_placer.py:854: Placing additional elements for SW7
+DEBUG: board_modifier.py:107: Getting SW7 footprint position: (180975000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED7 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED7 footprint position: (180975000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for SW39
+DEBUG: board_modifier.py:107: Getting SW39 footprint position: (142875000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional LED39 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED39 footprint position: (142875000, 80645000)
+DEBUG: key_placer.py:854: Placing additional elements for SW9
+DEBUG: board_modifier.py:107: Getting SW9 footprint position: (219075000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED9 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED9 footprint position: (219075000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for SW36
+DEBUG: board_modifier.py:107: Getting SW36 footprint position: (85725000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional LED36 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED36 footprint position: (85725000, 80645000)
+DEBUG: key_placer.py:854: Placing additional elements for SW82
+DEBUG: board_modifier.py:107: Getting SW82 footprint position: (254793750, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional LED82 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED82 footprint position: (254793750, 137795000)
+DEBUG: key_placer.py:854: Placing additional elements for SW70
+DEBUG: board_modifier.py:107: Getting SW70 footprint position: (176212500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional LED70 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED70 footprint position: (176212500, 118745000)
+DEBUG: key_placer.py:854: Placing additional elements for SW26
+DEBUG: board_modifier.py:107: Getting SW26 footprint position: (209550000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional LED26 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED26 footprint position: (209550000, 61595000)
+DEBUG: key_placer.py:854: Placing additional elements for SW64
+DEBUG: board_modifier.py:107: Getting SW64 footprint position: (50006250, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional LED64 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED64 footprint position: (50006250, 118745000)
+DEBUG: key_placer.py:854: Placing additional elements for SW53
+DEBUG: board_modifier.py:107: Getting SW53 footprint position: (90487500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional LED53 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED53 footprint position: (90487500, 99695000)
+DEBUG: key_placer.py:854: Placing additional elements for SW14
+DEBUG: board_modifier.py:107: Getting SW14 footprint position: (328612500, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED14 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED14 footprint position: (328612500, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for SW69
+DEBUG: board_modifier.py:107: Getting SW69 footprint position: (157162500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional LED69 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED69 footprint position: (157162500, 118745000)
+DEBUG: key_placer.py:854: Placing additional elements for SW11
+DEBUG: board_modifier.py:107: Getting SW11 footprint position: (266700000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED11 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED11 footprint position: (266700000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for SW86
+DEBUG: board_modifier.py:107: Getting SW86 footprint position: (347662500, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional LED86 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED86 footprint position: (347662500, 137795000)
+DEBUG: key_placer.py:854: Placing additional elements for SW71
+DEBUG: board_modifier.py:107: Getting SW71 footprint position: (195262500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional LED71 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED71 footprint position: (195262500, 118745000)
+DEBUG: key_placer.py:854: Placing additional elements for SW58
+DEBUG: board_modifier.py:107: Getting SW58 footprint position: (185737500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional LED58 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED58 footprint position: (185737500, 99695000)
+DEBUG: key_placer.py:854: Placing additional elements for SW77
+DEBUG: board_modifier.py:107: Getting SW77 footprint position: (40481250, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional LED77 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED77 footprint position: (40481250, 137795000)
+DEBUG: key_placer.py:854: Placing additional elements for SW2
+DEBUG: board_modifier.py:107: Getting SW2 footprint position: (76200000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED2 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED2 footprint position: (76200000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for SW54
+DEBUG: board_modifier.py:107: Getting SW54 footprint position: (109537500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional LED54 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED54 footprint position: (109537500, 99695000)
+DEBUG: key_placer.py:854: Placing additional elements for SW62
+DEBUG: board_modifier.py:107: Getting SW62 footprint position: (261937500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional LED62 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED62 footprint position: (261937500, 99695000)
+DEBUG: key_placer.py:854: Placing additional elements for SW76
+DEBUG: board_modifier.py:107: Getting SW76 footprint position: (347662500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional LED76 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED76 footprint position: (347662500, 118745000)
+DEBUG: key_placer.py:854: Placing additional elements for SW61
+DEBUG: board_modifier.py:107: Getting SW61 footprint position: (242887500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional LED61 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED61 footprint position: (242887500, 99695000)
+DEBUG: key_placer.py:854: Placing additional elements for SW37
+DEBUG: board_modifier.py:107: Getting SW37 footprint position: (104775000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional LED37 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED37 footprint position: (104775000, 80645000)
+DEBUG: key_placer.py:854: Placing additional elements for SW52
+DEBUG: board_modifier.py:107: Getting SW52 footprint position: (71437500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional LED52 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED52 footprint position: (71437500, 99695000)
+DEBUG: key_placer.py:854: Placing additional elements for SW30
+DEBUG: board_modifier.py:107: Getting SW30 footprint position: (295275000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional LED30 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED30 footprint position: (295275000, 61595000)
+DEBUG: key_placer.py:854: Placing additional elements for SW8
+DEBUG: board_modifier.py:107: Getting SW8 footprint position: (200025000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED8 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED8 footprint position: (200025000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for SW20
+DEBUG: board_modifier.py:107: Getting SW20 footprint position: (95250000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional LED20 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED20 footprint position: (95250000, 61595000)
+DEBUG: key_placer.py:854: Placing additional elements for SW80
+DEBUG: board_modifier.py:107: Getting SW80 footprint position: (159543750, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional LED80 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED80 footprint position: (159543750, 137795000)
+DEBUG: key_placer.py:854: Placing additional elements for SW28
+DEBUG: board_modifier.py:107: Getting SW28 footprint position: (247650000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional LED28 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED28 footprint position: (247650000, 61595000)
+DEBUG: key_placer.py:854: Placing additional elements for SW42
+DEBUG: board_modifier.py:107: Getting SW42 footprint position: (200025000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional LED42 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED42 footprint position: (200025000, 80645000)
+DEBUG: key_placer.py:854: Placing additional elements for SW50
+DEBUG: board_modifier.py:107: Getting SW50 footprint position: (366712500, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional LED50 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED50 footprint position: (366712500, 80645000)
+DEBUG: key_placer.py:854: Placing additional elements for SW45
+DEBUG: board_modifier.py:107: Getting SW45 footprint position: (257175000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional LED45 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED45 footprint position: (257175000, 80645000)
+DEBUG: key_placer.py:854: Placing additional elements for SW47
+DEBUG: board_modifier.py:107: Getting SW47 footprint position: (300037500, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional LED47 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED47 footprint position: (300037500, 80645000)
+DEBUG: key_placer.py:854: Placing additional elements for SW85
+DEBUG: board_modifier.py:107: Getting SW85 footprint position: (328612500, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional LED85 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED85 footprint position: (328612500, 137795000)
+DEBUG: key_placer.py:854: Placing additional elements for SW75
+DEBUG: board_modifier.py:107: Getting SW75 footprint position: (288131250, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional LED75 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED75 footprint position: (288131250, 118745000)
+DEBUG: key_placer.py:854: Placing additional elements for SW46
+DEBUG: board_modifier.py:107: Getting SW46 footprint position: (276225000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional LED46 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED46 footprint position: (276225000, 80645000)
+DEBUG: key_placer.py:854: Placing additional elements for SW63
+DEBUG: board_modifier.py:107: Getting SW63 footprint position: (292893750, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional LED63 footprint in /home/askiiart/Documents/guilty-pad-xx-accent-core-plus-yuri/PCB/guilty-pad-xx-accent-core-plus-yuri.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED63 footprint position: (292893750, 99695000)
+INFO: key_placer.py:486: Routing SW13 with D13
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW78 with D78
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW10 with D10
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW41 with D41
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW27 with D27
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW67 with D67
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW15 with D15
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW31 with D31
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW22 with D22
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW35 with D35
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW12 with D12
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW32 with D32
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW4 with D4
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW49 with D49
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW6 with D6
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW66 with D66
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW24 with D24
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW57 with D57
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW44 with D44
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW18 with D18
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW25 with D25
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW29 with D29
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW74 with D74
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW72 with D72
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW87 with D87
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW5 with D5
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW59 with D59
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW68 with D68
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW21 with D21
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW60 with D60
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW23 with D23
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW55 with D55
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW40 with D40
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW56 with D56
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW81 with D81
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW17 with D17
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW34 with D34
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW33 with D33
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW79 with D79
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW19 with D19
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW3 with D3
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW65 with D65
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW83 with D83
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW73 with D73
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW38 with D38
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW84 with D84
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW1 with D1
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW48 with D48
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW51 with D51
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW16 with D16
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW43 with D43
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW7 with D7
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW39 with D39
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW9 with D9
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW36 with D36
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW82 with D82
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW70 with D70
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW26 with D26
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW64 with D64
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW53 with D53
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW14 with D14
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW69 with D69
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW11 with D11
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW86 with D86
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW71 with D71
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW58 with D58
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW77 with D77
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW2 with D2
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW54 with D54
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW62 with D62
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW76 with D76
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW61 with D61
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW37 with D37
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW52 with D52
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW30 with D30
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW8 with D8
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW20 with D20
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW80 with D80
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW28 with D28
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW42 with D42
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW50 with D50
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW45 with D45
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW47 with D47
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW85 with D85
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW75 with D75
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW46 with D46
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:486: Routing SW63 with D63
+INFO: key_placer.py:488: Using internal autorouter method
+WARNING: board_modifier.py:537: Could not route pads, no common layers found
+INFO: key_placer.py:520: Removing dangling tracks
+INFO: key_placer.py:532: Removing 8c12d775-afee-4a89-bd36-d6022d32b6cc
+INFO: key_placer.py:532: Removing ddad2da0-e400-44cd-9a3c-f0415cda9252
+INFO: key_placer.py:532: Removing 2e78689e-98f1-4271-90f5-ecb7eb29a494
+INFO: key_placer.py:532: Removing 92f61ec4-313e-45ba-b4ab-d3e1bfc46a1a
+INFO: key_placer.py:532: Removing 9e0e206f-01e8-4d9c-82b2-c6df5999f66b
+INFO: key_placer.py:532: Removing d4ea3397-54e7-4981-b97c-89b9557cad3e
+INFO: key_placer.py:532: Removing f0fe3596-dd7b-4eb8-bbc5-7cf5f3712247
+INFO: key_placer.py:532: Removing 5c30c00d-a600-46be-974d-b2a4d3fdf423
+INFO: key_placer.py:532: Removing 1a60e2ab-384a-4b7c-bc94-683d91413eb5
+INFO: key_placer.py:532: Removing a92b5cbf-a619-4059-aa32-89b23d09a551
+INFO: key_placer.py:532: Removing 925e790c-62d1-43d7-ab41-5d9d5f501a08
+INFO: key_placer.py:532: Removing ab6ba9b5-5ed8-4769-ba0f-f2e4c0985575
+INFO: key_placer.py:532: Removing 66a02fdd-3888-4cb4-b3a7-dc69d439367a
+INFO: key_placer.py:532: Removing 4bbeeb9f-d5a8-4056-8fac-4fa342b7845e
+INFO: key_placer.py:532: Removing 6f32af90-b99e-4912-88dd-8d1d314303e6
+INFO: key_placer.py:532: Removing e34d8c5d-3531-4aab-8089-e2e42c9a0593
+INFO: key_placer.py:532: Removing 1ad7e2ff-78ef-4aae-90c9-ec09c65a86a0
+INFO: key_placer.py:532: Removing 851717b7-0102-4cca-8b86-29ff0b1e8221
+INFO: key_placer.py:520: Removing dangling tracks
+INFO: key_placer.py:532: Removing 60359106-b817-4b13-9013-b48019d68a47
+INFO: key_placer.py:532: Removing af2d028a-8e09-46af-9295-29d8b4cf1832
+INFO: key_placer.py:532: Removing fe11b057-e997-4e50-8f36-0051726bd968
+INFO: key_placer.py:532: Removing 765b6f5f-f85e-449f-8e43-5467b4de9107
+INFO: key_placer.py:532: Removing a38fd452-8f72-4fc1-8a19-58afa303befa
+INFO: key_placer.py:532: Removing c9e93ec1-cc7b-4a04-858f-7ca3219ecd75
+INFO: key_placer.py:532: Removing 96a2d8a9-6079-4438-baab-7f3c6db93c09
+INFO: key_placer.py:532: Removing 0dca4099-8665-439e-94d9-7bf769fdce3c
+INFO: key_placer.py:532: Removing c4d37533-1078-4400-8ba6-e690b5c994f7
+INFO: key_placer.py:532: Removing 02365cc2-1487-4966-82a3-7c0f53344b29
+INFO: key_placer.py:532: Removing 97bdf1f9-4157-4095-9076-39602f5b4397
+INFO: key_placer.py:520: Removing dangling tracks
+INFO: key_placer.py:532: Removing 1ad100b7-9ee6-458f-b26f-0883e858f759
+INFO: key_placer.py:532: Removing 681eb142-f944-4b0b-ae90-edaf2ca2cb69
+INFO: key_placer.py:520: Removing dangling tracks
